@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MediCare Hospital - Premier healthcare services with experienced doctors and modern facilities. Book appointments online.">
+    <meta name="keywords" content="hospital, healthcare, medical services, doctors, appointments, emergency care">
+    <title>MediCare Hospital - Premier Healthcare Services</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="medical-cross">
+                <div class="cross-horizontal"></div>
+                <div class="cross-vertical"></div>
+            </div>
+            <h3>MediCare Hospital</h3>
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <span class="logo-text">MediCare</span>
+                    </a>
+                </div>
+
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html#cardiology">Cardiology</a></li>
+                            <li><a href="services.html#pediatrics">Pediatrics</a></li>
+                            <li><a href="services.html#orthopedics">Orthopedics</a></li>
+                            <li><a href="services.html#neurology">Neurology</a></li>
+                            <li><a href="services.html#emergency">Emergency Care</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="doctors.html" class="nav-link">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link login-btn">
+                            <i class="fas fa-user"></i> Login
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        <div class="container">
+            <div class="emergency-content">
+                <i class="fas fa-ambulance"></i>
+                <span>24/7 Emergency Services Available</span>
+                <a href="tel:+1234567890" class="emergency-phone">
+                    <i class="fas fa-phone"></i> Call: +1 (234) 567-890
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                        <h1 class="hero-title">
+                            Your Health is Our 
+                            <span class="highlight">Priority</span>
+                        </h1>
+                        <p class="hero-description">
+                            Experience world-class healthcare with our team of expert doctors, 
+                            state-of-the-art facilities, and compassionate care. We're here for 
+                            you 24/7 with comprehensive medical services.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="appointments.html" class="btn btn-primary">
+                                <i class="fas fa-calendar-check"></i>
+                                Book Appointment
+                            </a>
+                            <a href="services.html" class="btn btn-secondary">
+                                <i class="fas fa-stethoscope"></i>
+                                Our Services
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="hero-card">
+                            <img src="assets/images/hero-doctor.jpg" alt="Professional Doctor" class="hero-img">
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number" data-count="15000">0</span>
+                                    <span class="stat-label">Happy Patients</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number" data-count="50">0</span>
+                                    <span class="stat-label">Expert Doctors</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Services Section -->
+        <section class="quick-services" data-aos="fade-up" data-aos-duration="800">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-calendar-plus"></i>
+                        </div>
+                        <h3>Book Appointment</h3>
+                        <p>Schedule your visit with our specialists online</p>
+                        <a href="appointments.html" class="service-link">Book Now</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>Find a Doctor</h3>
+                        <p>Browse our team of experienced medical professionals</p>
+                        <a href="doctors.html" class="service-link">View Doctors</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <h3>Emergency Care</h3>
+                        <p>24/7 emergency services for urgent medical needs</p>
+                        <a href="tel:+1234567890" class="service-link">Call Now</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <h3>Medical Records</h3>
+                        <p>Access your health records and test results online</p>
+                        <a href="login.html" class="service-link">Access Portal</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview Section -->
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+                        <span class="section-subtitle">About MediCare</span>
+                        <h2 class="section-title">
+                            Leading Healthcare Provider 
+                            <span class="highlight">Since 1985</span>
+                        </h2>
+                        <p class="about-description">
+                            For over three decades, MediCare Hospital has been at the forefront of 
+                            medical excellence, providing comprehensive healthcare services to our 
+                            community. Our commitment to innovation, compassionate care, and medical 
+                            expertise has made us the trusted choice for thousands of families.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>State-of-the-art medical equipment</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Board-certified specialists</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>24/7 emergency services</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Patient-centered care approach</span>
+                            </div>
+                        </div>
+                        <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+                    </div>
+                    <div class="about-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="image-container">
+                            <img src="assets/images/hospital-building.jpg" alt="MediCare Hospital Building" class="main-image">
+                            <div class="floating-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Excellence Award</h4>
+                                    <p>Best Healthcare Provider 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+                    <span class="section-subtitle">Our Services</span>
+                    <h2 class="section-title">Comprehensive Medical Care</h2>
+                    <p class="section-description">
+                        We offer a full range of medical services with cutting-edge technology 
+                        and experienced healthcare professionals.
+                    </p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="service-image">
+                            <img src="assets/images/cardiology.jpg" alt="Cardiology Department">
+                            <div class="service-overlay">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Cardiology</h3>
+                            <p>Advanced heart care with the latest diagnostic and treatment options.</p>
+                            <a href="services.html#cardiology" class="service-link">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="service-image">
+                            <img src="assets/images/pediatrics.jpg" alt="Pediatrics Department">
+                            <div class="service-overlay">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Pediatrics</h3>
+                            <p>Specialized care for infants, children, and adolescents.</p>
+                            <a href="services.html#pediatrics" class="service-link">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="service-image">
+                            <img src="assets/images/orthopedics.jpg" alt="Orthopedics Department">
+                            <div class="service-overlay">
+                                <i class="fas fa-bone"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Orthopedics</h3>
+                            <p>Expert treatment for bone, joint, and muscle conditions.</p>
+                            <a href="services.html#orthopedics" class="service-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-cta" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <a href="services.html" class="btn btn-outline">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Doctors -->
+        <section class="featured-doctors">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+                    <span class="section-subtitle">Our Team</span>
+                    <h2 class="section-title">Meet Our Expert Doctors</h2>
+                    <p class="section-description">
+                        Our medical team consists of highly qualified and experienced doctors 
+                        dedicated to providing the best possible care.
+                    </p>
+                </div>
+                <div class="doctors-grid">
+                    <div class="doctor-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="doctor-image">
+                            <img src="assets/images/doctor-1.jpg" alt="Dr. Sarah Johnson">
+                            <div class="doctor-overlay">
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Sarah Johnson</h3>
+                            <p class="doctor-specialty">Chief Cardiologist</p>
+                            <p class="doctor-experience">15+ Years Experience</p>
+                            <a href="appointments.html?doctor=sarah-johnson" class="btn btn-sm btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                    <div class="doctor-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="doctor-image">
+                            <img src="assets/images/doctor-2.jpg" alt="Dr. Michael Chen">
+                            <div class="doctor-overlay">
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Michael Chen</h3>
+                            <p class="doctor-specialty">Pediatric Specialist</p>
+                            <p class="doctor-experience">12+ Years Experience</p>
+                            <a href="appointments.html?doctor=michael-chen" class="btn btn-sm btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                    <div class="doctor-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="doctor-image">
+                            <img src="assets/images/doctor-3.jpg" alt="Dr. Emily Rodriguez">
+                            <div class="doctor-overlay">
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Emily Rodriguez</h3>
+                            <p class="doctor-specialty">Orthopedic Surgeon</p>
+                            <p class="doctor-experience">18+ Years Experience</p>
+                            <a href="appointments.html?doctor=emily-rodriguez" class="btn btn-sm btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors-cta" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <a href="doctors.html" class="btn btn-outline">View All Doctors</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+                    <span class="section-subtitle">Patient Reviews</span>
+                    <h2 class="section-title">What Our Patients Say</h2>
+                </div>
+                <div class="testimonials-slider" id="testimonials-slider">
+                    <div class="testimonial-item active" data-aos="fade-up" data-aos-duration="800">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "The care I received at MediCare Hospital was exceptional. The staff was 
+                                professional, caring, and made me feel comfortable throughout my treatment. 
+                                I highly recommend this hospital to anyone seeking quality healthcare."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/patient-1.jpg" alt="John Smith">
+                                <div class="author-info">
+                                    <h4>John Smith</h4>
+                                    <p>Cardiology Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Dr. Chen and the pediatric team took amazing care of my daughter. 
+                                The facility is clean, modern, and child-friendly. We felt safe 
+                                and well-cared for during our entire visit."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/patient-2.jpg" alt="Maria Garcia">
+                                <div class="author-info">
+                                    <h4>Maria Garcia</h4>
+                                    <p>Pediatric Patient Parent</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "The emergency department staff saved my life. Their quick response 
+                                and professional care during my heart attack was incredible. 
+                                I'm forever grateful to the entire team at MediCare."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/patient-3.jpg" alt="Robert Johnson">
+                                <div class="author-info">
+                                    <h4>Robert Johnson</h4>
+                                    <p>Emergency Care Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn prev-btn" id="prev-testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots" id="testimonial-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="testimonial-btn next-btn" id="next-testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="cta-text">
+                        <h2>Ready to Take Care of Your Health?</h2>
+                        <p>Book an appointment with our expert doctors today and experience world-class healthcare.</p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="appointments.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-calendar-check"></i>
+                            Book Appointment
+                        </a>
+                        <a href="tel:+1234567890" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-phone"></i>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <span class="logo-text">MediCare</span>
+                    </div>
+                    <p class="footer-description">
+                        Providing exceptional healthcare services with compassion, 
+                        innovation, and excellence since 1985.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="appointments.html">Appointments</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#cardiology">Cardiology</a></li>
+                        <li><a href="services.html#pediatrics">Pediatrics</a></li>
+                        <li><a href="services.html#orthopedics">Orthopedics</a></li>
+                        <li><a href="services.html#neurology">Neurology</a></li>
+                        <li><a href="services.html#emergency">Emergency Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Healthcare Ave, Medical City, MC 12345</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (234) 567-890</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@medicare-hospital.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Emergency Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Developer Credit Section -->
+            <div class="developer-credit">
+                <div class="developer-content">
+                    <div class="developer-info">
+                        <h4><i class="fas fa-code"></i> Website Developer</h4>
+                        <p class="developer-tagline">Need a custom website like this? Contact me!</p>
+                        <div class="developer-details">
+                            <div class="developer-item">
+                                <i class="fas fa-user"></i>
+                                <span><strong>Peter Lightspeed</strong> - Full Stack Developer</span>
+                            </div>
+                            <div class="developer-item">
+                                <i class="fas fa-globe"></i>
+                                <a href="https://peterlight123.github.io/portfolio" target="_blank" rel="noopener noreferrer">
+                                    Portfolio: peterlight123.github.io/portfolio
+                                </a>
+                            </div>
+                            <div class="developer-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:petereluwade55@gmail.com">
+                                    Email: petereluwade55@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="developer-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Full Stack</span>
+                        </div>
+                    </div>
+                    <div class="developer-cta">
+                        <a href="mailto:petereluwade55@gmail.com" class="btn btn-developer">
+                            <i class="fas fa-paper-plane"></i>
+                            Get Your Website
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>© 2024 MediCare Hospital. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Chatbot Widget Placeholder -->
+    <div id="chatbot-widget"></div>
+
+    <!-- JavaScript Files -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive medical services at Lightspeed Hospital - Cardiology, Pediatrics, Orthopedics, Neurology, Emergency Care, Surgery and more specialized healthcare services.">
+    <meta name="keywords" content="medical services, cardiology, pediatrics, orthopedics, neurology, emergency care, surgery, lightspeed hospital">
+    <meta name="author" content="Peter Lightspeed">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Medical Services - Lightspeed Hospital">
+    <meta property="og:description" content="Discover our comprehensive range of medical services including specialized departments and advanced healthcare treatments.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://lightspeed-hospital.com/services.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Medical Services - Lightspeed Hospital">
+    <meta name="twitter:description" content="Comprehensive healthcare services with advanced medical technology and expert specialists.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    
+    <title>Medical Services - Lightspeed Hospital | Comprehensive Healthcare Solutions</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS for Service Carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Services Specific Stylesheet -->
+    <link rel="stylesheet" href="services.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalOrganization",
+        "name": "Lightspeed Hospital",
+        "description": "Comprehensive medical services including cardiology, pediatrics, orthopedics, neurology, emergency care and specialized treatments",
+        "url": "https://lightspeed-hospital.com/services.html",
+        "logo": "https://lightspeed-hospital.com/logo.png",
+        "medicalSpecialty": [
+            "Cardiology",
+            "Pediatrics", 
+            "Orthopedics",
+            "Neurology",
+            "Emergency Medicine",
+            "General Surgery",
+            "Internal Medicine",
+            "Radiology",
+            "Oncology",
+            "Gynecology"
+        ],
+        "availableService": [
+            {
+                "@type": "MedicalProcedure",
+                "name": "Cardiac Surgery",
+                "description": "Advanced heart surgery procedures"
+            },
+            {
+                "@type": "MedicalProcedure", 
+                "name": "Pediatric Care",
+                "description": "Comprehensive children's healthcare"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Orthopedic Surgery", 
+                "description": "Bone and joint surgical procedures"
+            }
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Healthcare Ave",
+            "addressLocality": "Medical City",
+            "addressRegion": "MC",
+            "postalCode": "12345",
+            "addressCountry": "US"
+        },
+        "telephone": "+1-234-567-890"
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="medical-cross">
+                <div class="cross-horizontal"></div>
+                <div class="cross-vertical"></div>
+            </div>
+            <h3>Lightspeed Hospital</h3>
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        <div class="container">
+            <div class="emergency-content">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>24/7 Emergency Services Available</span>
+                <a href="tel:+1234567911" class="emergency-phone">
+                    <i class="fas fa-phone"></i>
+                    Emergency: +1 (234) 567-911
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <span class="logo-text">Lightspeed Hospital</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="nav-link active">
+                            Services <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#cardiology">Cardiology</a></li>
+                            <li><a href="#pediatrics">Pediatrics</a></li>
+                            <li><a href="#orthopedics">Orthopedics</a></li>
+                            <li><a href="#neurology">Neurology</a></li>
+                            <li><a href="#emergency">Emergency Care</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                    <li><a href="appointments.html" class="nav-link">Appointments</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="login.html" class="nav-link login-btn">
+                        <i class="fas fa-user"></i> Login
+                    </a></li>
+                </ul>
+                
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Medical Services</span>
+                </nav>
+                <h1 class="hero-title">Comprehensive Medical Services</h1>
+                <p class="hero-description">
+                    Advanced healthcare solutions delivered by expert medical professionals 
+                    using state-of-the-art technology and compassionate care.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Medical Departments</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Medical Procedures</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Emergency Care</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Filter -->
+    <section class="services-filter">
+        <div class="container">
+            <div class="filter-tabs" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i>
+                    All Services
+                </button>
+                <button class="filter-btn" data-filter="emergency">
+                    <i class="fas fa-ambulance"></i>
+                    Emergency
+                </button>
+                <button class="filter-btn" data-filter="surgical">
+                    <i class="fas fa-user-md"></i>
+                    Surgical
+                </button>
+                <button class="filter-btn" data-filter="diagnostic">
+                    <i class="fas fa-x-ray"></i>
+                    Diagnostic
+                </button>
+                <button class="filter-btn" data-filter="specialty">
+                    <i class="fas fa-stethoscope"></i>
+                    Specialty
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services Grid -->
+    <section class="main-services">
+        <div class="container">
+            <div class="services-grid">
+                
+                <!-- Cardiology Service -->
+                <div class="service-card" data-category="specialty surgical" data-aos="fade-up" data-aos-delay="100" id="cardiology">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Cardiology Department - Heart Care Services">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-header">
+                            <h3 class="service-title">Cardiology</h3>
+                            <span class="service-badge specialty">Specialty Care</span>
+                        </div>
+                        <p class="service-description">
+                            Comprehensive heart care services including diagnostic testing, 
+                            interventional procedures, and cardiac surgery with advanced technology.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Cardiac Catheterization</li>
+                            <li><i class="fas fa-check"></i> Heart Surgery</li>
+                            <li><i class="fas fa-check"></i> Pacemaker Implantation</li>
+                            <li><i class="fas fa-check"></i> Echocardiography</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-info">
+                                <span class="availability">24/7 Available</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    4.9
+                                </span>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-learn-more" data-service="cardiology">
+                                    <i class="fas fa-info-circle"></i>
+                                    Learn More
+                                </button>
+                                <a href="appointments.html?service=cardiology" class="btn-book">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emergency Care Service -->
+                <div class="service-card" data-category="emergency" data-aos="fade-up" data-aos-delay="200" id="emergency">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Emergency Department - 24/7 Emergency Care">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <i class="fas fa-ambulance"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-header">
+                            <h3 class="service-title">Emergency Care</h3>
+                            <span class="service-badge emergency">24/7 Emergency</span>
+                        </div>
+                        <p class="service-description">
+                            Round-the-clock emergency medical services with rapid response team, 
+                            trauma care, and life-saving interventions.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Trauma Center Level II</li>
+                            <li><i class="fas fa-check"></i> Rapid Response Team</li>
+                            <li><i class="fas fa-check"></i> Critical Care Unit</li>
+                            <li><i class="fas fa-check"></i> Emergency Surgery</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-info">
+                                <span class="availability emergency-available">24/7 Emergency</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    4.8
+                                </span>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-learn-more" data-service="emergency">
+                                    <i class="fas fa-info-circle"></i>
+                                    Learn More
+                                </button>
+                                <a href="tel:+1234567911" class="btn-emergency">
+                                    <i class="fas fa-phone"></i>
+                                    Call Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pediatrics Service -->
+                <div class="service-card" data-category="specialty" data-aos="fade-up" data-aos-delay="300" id="pediatrics">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Pediatrics Department - Children's Healthcare">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-header">
+                            <h3 class="service-title">Pediatrics</h3>
+                            <span class="service-badge specialty">Children's Care</span>
+                        </div>
+                        <p class="service-description">
+                            Specialized healthcare for infants, children, and adolescents with 
+                            child-friendly environment and pediatric specialists.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Newborn Care</li>
+                            <li><i class="fas fa-check"></i> Pediatric Surgery</li>
+                            <li><i class="fas fa-check"></i> Vaccination Programs</li>
+                            <li><i class="fas fa-check"></i> Child Development</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-info">
+                                <span class="availability">Mon-Sun 7AM-9PM</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    4.9
+                                </span>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-learn-more" data-service="pediatrics">
+                                    <i class="fas fa-info-circle"></i>
+                                    Learn More
+                                </button>
+                                <a href="appointments.html?service=pediatrics" class="btn-book">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orthopedics Service -->
+                <div class="service-card" data-category="specialty surgical" data-aos="fade-up" data-aos-delay="400" id="orthopedics">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Orthopedics Department - Bone and Joint Care">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <i class="fas fa-bone"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-header">
+                            <h3 class="service-title">Orthopedics</h3>
+                            <span class="service-badge surgical">Surgical Care</span>
+                        </div>
+                        <p class="service-description">
+                            Advanced bone, joint, and musculoskeletal care including joint 
+                            replacement, sports medicine, and trauma surgery.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Joint Replacement</li>
+                            <li><i class="fas fa-check"></i> Sports Medicine</li>
+                            <li><i class="fas fa-check"></i> Spine Surgery</li>
+                            <li><i class="fas fa-check"></i> Fracture Care</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-info">
+                                <span class="availability">Mon-Fri 8AM-6PM</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    4.8
+                                </span>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-learn-more" data-service="orthopedics">
+                                    <i class="fas fa-info-circle"></i>
+                                    Learn More
+                                </button>
+                                <a href="appointments.html?service=orthopedics" class="btn-book">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Neurology Service -->
+                <div class="service-card" data-category="specialty" data-aos="fade-up" data-aos-delay="500" id="neurology">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Neurology Department - Brain and Nervous System Care">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-header">
+                            <h3 class="service-title">Neurology</h3>
+                            <span class="service-badge specialty">Neurological Care</span>
+                        </div>
+                        <p class="service-description">
+                            Comprehensive neurological care for brain, spine, and nervous system 
+                            disorders with advanced diagnostic and treatment options.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Brain Surgery</li>
+                            <li><i class="fas fa-check"></i> Stroke Care</li>
+                            <li><i class="fas fa-check"></i> Epilepsy Treatment</li>
+                            <li><i class="fas fa-check"></i> Neuroimaging</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-info">
+                                <span class="availability">Mon-Fri 9AM-5PM</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    4.9
+                                </span>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-learn-more" data-service="neurology">
+                                    <i class="fas fa-info-circle"></i>
+                                    Learn More
+                                </button>
+                                <a href="appointments.html?service=neurology" class="btn-book">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Radiology Service -->
+                <div class="service-card" data-category="diagnostic" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Radiology Department - Medical Imaging Services">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <i class="fas fa-x-ray"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-header">
+                            <h3 class="service-title">Radiology</h3>
+                            <span class="service-badge diagnostic">Diagnostic Imaging</span>
+                        </div>
+                        <p class="service-description">
+                            State-of-the-art medical imaging services including MRI, CT scans, 
+                            X-rays, and ultrasound with rapid results.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> MRI Scanning</li>
+                            <li><i class="fas fa-check"></i> CT Imaging</li>
+                            <li><i class="fas fa-check"></i> Digital X-rays</li>
+                            <li><i class="fas fa-check"></i> Ultrasound</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-info">
+                                <span class="availability">24/7 Available</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    4.7
+                                </span>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-learn-more" data-service="radiology">
+                                    <i class="fas fa-info-circle"></i>
+                                    Learn More
+                                </button>
+                                <a href="appointments.html?service=radiology" class="btn-book">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Book Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Modal -->
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h2 class="modal-title">Service Details</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" alt="Service Image">
+                </div>
+                <div class="modal-info">
+                    <h3 class="service-name">Service Name</h3>
+                    <p class="service-full-description">Detailed service description...</p>
+                    <div class="service-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span class="detail-label">Hours:</span>
+                            <span class="detail-value">24/7 Available</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="detail-label">Location:</span>
+                            <span class="detail-value">Floor 2, Wing A</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <span class="detail-label">Contact:</span>
+                            <span class="detail-value">+1 (234) 567-890</span>
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="appointments.html" class="btn btn-primary">
+                            <i class="fas fa-calendar-alt"></i>
+                            Schedule Appointment
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <i class="fas fa-info-circle"></i>
+                            Get More Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Our Services -->
+    <section class="why-choose-services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Excellence in Healthcare</span>
+                <h2 class="section-title">Why Choose Our Medical Services?</h2>
+                <p class="section-description">
+                    We combine advanced medical technology with compassionate care to deliver 
+                    exceptional healthcare experiences for every patient.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Expert Specialists</h3>
+                    <p>Board-certified physicians and specialists with years of experience in their respective fields.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Advanced Technology</h3>
+                    <p>State-of-the-art medical equipment and cutting-edge technology for accurate diagnosis and treatment.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Availability</h3>
+                    <p>Round-the-clock emergency services and critical care when you need it most.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Compassionate Care</h3>
+                    <p>Patient-centered approach with empathy, respect, and personalized attention for every individual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="services-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <div class="cta-text">
+                    <h2>Need Medical Care? We're Here to Help</h2>
+                    <p>
+                        Don't wait when it comes to your health. Schedule an appointment with our expert medical team or contact us for emergency care.
+                    </p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="appointments.html" class="btn btn-primary">
+                        <i class="fas fa-calendar-alt"></i>
+                        Schedule Appointment
+                    </a>
+                    <a href="tel:+1234567911" class="btn btn-emergency">
+                        <i class="fas fa-phone"></i>
+                        Emergency Call
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Get Information
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <span class="logo-text">Lightspeed Hospital</span>
+                    </div>
+                    <p class="footer-description">
+                        Providing exceptional healthcare services with compassion, 
+                        innovation, and excellence since 1985.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="appointments.html">Appointments</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Medical Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#emergency">Emergency Care</a></li>
+                        <li><a href="#cardiology">Cardiology</a></li>
+                        <li><a href="#pediatrics">Pediatrics</a></li>
+                        <li><a href="#orthopedics">Orthopedics</a></li>
+                        <li><a href="#neurology">Neurology</a></li>
+                        <li><a href="services.html">View All Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Healthcare Ave<br>Medical City, MC 12345</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (234) 567-890</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@lightspeed-hospital.com</span>
+                        </div>
+                        <div class="contact-item emergency">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Emergency: +1 (234) 567-911</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p>Stay updated with health tips and hospital news</p>
+                    <form class="newsletter-form" data-form-type="newsletter">
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="footer-certifications">
+                        <div class="certification">
+                            <i class="fas fa-certificate"></i>
+                            <span>Joint Commission Accredited</span>
+                        </div>
+                        <div class="certification">
+                            <i class="fas fa-award"></i>
+                            <span>5-Star Medicare Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>© 2024 Lightspeed Hospital. All rights reserved.</p>
+                    </div>
+                    <div class="footer-links-bottom">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="patient-rights.html">Patient Rights</a>
+                        <a href="accessibility.html">Accessibility</a>
+                    </div>
+                </div>
+                
+                <!-- Developer Credit -->
+                <div class="developer-credit">
+                    <p>
+                        <i class="fas fa-code"></i>
+                        Developed with <i class="fas fa-heart" style="color: #e74c3c;"></i> by 
+                        <a href="https://peterlight123.github.io/portfolio" target="_blank" rel="noopener noreferrer">
+                            <strong>Peter Lightspeed</strong>
+                        </a>
+                        | 
+                        <a href="mailto:petereluwade55@gmail.com">
+                            <i class="fas fa-envelope"></i> petereluwade55@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="services.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
+
+    <!-- Service Page Initialization -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🏥 Services page loaded successfully!');
+            console.log('💻 Developed by Peter Lightspeed');
+            console.log('🌐 Portfolio: https://peterlight123.github.io/portfolio');
+            
+            // Initialize services functionality
+            if (typeof initializeServices === 'function') {
+                initializeServices();
+            }
+        });
+    </script>
+</body>
+</html>
+
